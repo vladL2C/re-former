@@ -15,7 +15,7 @@
   </div>
 <% end %>
 
-<%= form_for(@user, url: users_path)  do |f| %>
+<%= form_for(@user)  do |f| %>
 	
 	<%= f.label :username%>
 	<%= f.text_field :username %><br>
@@ -26,7 +26,7 @@
 	<%= f.label :password %>
 	<%= f.password_field :password %><br>
 
-	<%= f.submit "Create" %>
+	<%= f.submit "Update" %>
 	<% end %>
 
 
